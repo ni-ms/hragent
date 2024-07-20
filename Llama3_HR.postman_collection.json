@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "07df35f7-90a1-4bf5-8742-477aed988293",
+		"name": "Llama3_HR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32797392"
+	},
+	"item": [
+		{
+			"name": "Post_Job_Desc",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "jd",
+							"value": "Qualifications Required Qualifications: Bachelor’s degree in computer science or related technical field AND 2+ years technical engineering experience with coding in languages including, but not limited to C#, Java, JavaScript, or Python OR equivalent experience.  2+ years of experience coding using Java. Other Requirements Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter. Preferred Qualifications Bachelor’s degree in computer science or related technical field AND 4+ years technical engineering experience with coding in languages including, but not limited to C#, Java, JavaScript, or Python OR master’s degree in computer science or related technical field AND 2+ years technical engineering experience with coding in languages including, but not limited to C#, Java, JavaScript, or Python or equivalent experience. 3+ years' experience building backend systems in Java for customer-facing web applications, including API design and implementation. Experience with (or enthusiasm for learning) ETL, analytics and reporting backend patterns and systems. Experience writing queries with SQL and using MySQL. Experience working with LLMs and prompt engineering. Proficiency in writing unit tests.",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "test1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/JD",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"JD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Job_Desc Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "jd",
+							"value": "Qualifications Required Qualifications: Bachelor’s degree in computer science or related technical field AND 2+ years technical engineering experience with coding in languages including, but not limited to C#, Java, JavaScript, or Python OR equivalent experience.  2+ years of experience coding using Java. Other Requirements Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter. Preferred Qualifications Bachelor’s degree in computer science or related technical field AND 4+ years technical engineering experience with coding in languages including, but not limited to C#, Java, JavaScript, or Python OR master’s degree in computer science or related technical field AND 2+ years technical engineering experience with coding in languages including, but not limited to C#, Java, JavaScript, or Python or equivalent experience. 3+ years' experience building backend systems in Java for customer-facing web applications, including API design and implementation. Experience with (or enthusiasm for learning) ETL, analytics and reporting backend patterns and systems. Experience writing queries with SQL and using MySQL. Experience working with LLMs and prompt engineering. Proficiency in writing unit tests.",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "test1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/JD",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"JD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_JD_List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/JD_List",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"JD_List"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Req_Profile_Match",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "test1",
+							"type": "text"
+						},
+						{
+							"key": "resume",
+							"type": "file",
+							"src": "/D:/Projects/copilotchat/resume.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/Profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Profile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
